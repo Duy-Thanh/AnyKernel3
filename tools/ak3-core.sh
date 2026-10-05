@@ -1012,6 +1012,8 @@ do_check_boot_version() {
   if [ "$(file_getprop anykernel.sh do.check_boot_version)" != 1 ]; then
     ui_print "  -> [SKIPPED] do.check_boot_version=0: version check SKIPPED!"
     ui_print "  -> [SKIPPED] Forced flash. Proceed with caution!"
+    ui_print "  -> [SKIPPED] This notification may also appear on officially supported devices"
+    ui_print "  -> [SKIPPED] Please test thoroughly after flashing this kernel!"
     return 1
   fi
 
